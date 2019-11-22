@@ -17,9 +17,10 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="experience" placeholder="Experience" required="required" />
-        <input type="text" name="test_score" placeholder="Test Score" required="required" />
-		<input type="text" name="interview_score" placeholder="Interview Score" required="required" />
+    	<input type="text" name="GD Score" placeholder="GDScore" required="required" />
+        <input type="text" name="Written Test Score" placeholder="Written Test Score" required="required" />
+		<input type="text" name="Technical Interview Score" placeholder="Technical Interview Scor" required="required" />
+	    <input type="text" name="HR Interview Score" placeholder="HR Interview Scor" required="required" />
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
