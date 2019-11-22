@@ -14,14 +14,14 @@
 <body>
  <div class="login">
 	<h1>Predict Qualesce Interview Hiring Process</h1>
-	 <h1Input the data on the scale 0-10(0 is min and 10 is max)</h1>
+	 <h1>Input the data on the scale 0-10(0 is min and 10 is max)</h1>
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
     	<input type="text" name="GD Score" placeholder="GDScore" required="required" />
         <input type="text" name="Written Test Score" placeholder="Written Test Score" required="required" />
 		<input type="text" name="Technical Interview Score" placeholder="Technical Interview Scor" required="required" />
-	    <input type="text" name="HR Interview Score" placeholder="HR Interview Scor" required="required" />
+	    <input type="text" name="HR Interview Score" placeholder="HR Interview Score" required="required" />
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
