@@ -28,9 +28,9 @@ def predict():
     prediction = model.predict(final_features)
 
     if prediction == 0:
-      return render_template('index.html', prediction_text='Candidate not get hired!!')
+      return render_template('index.html', prediction_text='Candidate not get Shortlisted!!')
     else:
-       return render_template('index.html', prediction_text='Candidate get hired!!')
+       return render_template('index.html', prediction_text='Candidate get Shortlisted!!')
  
 if __name__ == "__main__":
     app.run(debug=True)
